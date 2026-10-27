@@ -6,25 +6,57 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero">
-        <p className="hero-label">THE LEGACY OF GREATNESS</p>
+        <div className="about-hero-content">
+          <p className="hero-label">THE LEGACY OF GREATNESS</p>
 
-        <h1>
-          ABOUT THE
-          <br />
-          <span>BALLON D’OR</span>
-        </h1>
+          <h1>
+            ABOUT THE
+            <br />
+            <span>BALLON D’OR</span>
+          </h1>
 
-        <p>
-          Celebrating football's finest talents, unforgettable
-          performances, and the players who inspire generations.
-        </p>
+          <p className="about-hero-description">
+            Celebrating football's finest talents, unforgettable
+            performances, and the players who inspire generations.
+          </p>
+
+          <a href="/nominees" className="about-hero-button">
+            EXPLORE NOMINEES <span>→</span>
+          </a>
+        </div>
+
+        {/* Golden Trophy Image */}
+        <div className="about-trophy">
+          <div className="trophy-glow"></div>
+
+          <img
+            src="/ballon-dor-trophy.png"
+            alt="Golden Ballon d'Or football trophy"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+
+          <div className="trophy-caption">
+            <span>✦</span> THE GOLDEN DREAM
+          </div>
+        </div>
       </section>
 
       {/* Introduction */}
       <section className="about-section">
+        <div className="about-stadium-image">
+          <div className="stadium-overlay">
+            <span>THE BEAUTIFUL GAME</span>
+          </div>
+        </div>
+
         <div className="about-content">
           <p className="hero-label">THE AWARD</p>
-          <h2>A Symbol of Football Excellence</h2>
+
+          <h2>
+            A Symbol of Football <span>Excellence</span>
+          </h2>
 
           <p>
             The Ballon d'Or is one of the most prestigious individual
@@ -51,8 +83,15 @@ const About = () => {
 
       {/* History */}
       <section className="about-history">
-        <p className="hero-label">A RICH HISTORY</p>
-        <h2>More Than a Trophy</h2>
+        <div className="section-heading">
+          <p className="hero-label">A RICH HISTORY</p>
+          <h2>
+            More Than a <span>Trophy</span>
+          </h2>
+          <p className="section-subtitle">
+            A journey through decades of footballing greatness.
+          </p>
+        </div>
 
         <div className="history-grid">
           <article className="history-card">
@@ -87,8 +126,15 @@ const About = () => {
 
       {/* Award Categories */}
       <section className="about-categories">
-        <p className="hero-label">THE HONOURS</p>
-        <h2>Major Award Categories</h2>
+        <div className="section-heading">
+          <p className="hero-label">THE HONOURS</p>
+          <h2>
+            Major Award <span>Categories</span>
+          </h2>
+          <p className="section-subtitle">
+            Celebrating excellence across every corner of football.
+          </p>
+        </div>
 
         <div className="category-grid">
           <article className="category-card">
@@ -129,35 +175,47 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Fan Voting */}
+      {/* Fan Voting */}
       <section className="fan-voting-section">
-        <p className="hero-label">YOUR VOICE MATTERS</p>
-        <h2>How Our Fan Voting Works</h2>
+        <div className="section-heading">
+          <p className="hero-label">YOUR VOICE MATTERS</p>
+          <h2>
+            How Our <span>Fan Voting</span> Works
+          </h2>
+          <p className="section-subtitle">
+            Football belongs to everyone. Make your choice count.
+          </p>
+        </div>
 
         <div className="voting-steps">
-          <div>
-            <span>01</span>
+          <div className="voting-step">
+            <span className="step-number">01</span>
             <h3>Explore</h3>
             <p>Discover the players featured on our nominees page.</p>
           </div>
 
-          <div>
-            <span>02</span>
+          <div className="voting-step">
+            <span className="step-number">02</span>
             <h3>Choose</h3>
             <p>Select the player you believe deserves recognition.</p>
           </div>
 
-          <div>
-            <span>03</span>
+          <div className="voting-step">
+            <span className="step-number">03</span>
             <h3>Vote</h3>
             <p>Log in and submit your vote to support your favourite.</p>
           </div>
         </div>
 
         <p className="fan-voting-note">
+          <span>ⓘ</span>
           This website is a college demonstration project. Its fan votes
           are separate from the official Ballon d'Or selection process.
         </p>
+
+        <a href="/nominees" className="about-cta-button">
+          MEET THE NOMINEES <span>→</span>
+        </a>
       </section>
     </div>
   );
