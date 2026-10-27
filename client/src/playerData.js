@@ -1,0 +1,73 @@
+// Manually maintained demo data for the college project.
+// IMPORTANT: These figures are illustrative placeholders, not verified live statistics.
+// Update the season label and figures before presenting this as factual data.
+
+export const playerData = [
+  {
+    id: "messi",
+    name: "Lionel Messi",
+    shortName: "Messi",
+    country: "Argentina",
+    flag: "🇦🇷",
+    club: "Inter Miami",
+    position: "Forward",
+    image: "/players/messi.jpeg",
+    season: "2025–26 (demo)",
+    seasonStats: { appearances: 18, goals: 12, assists: 8 },
+    careerStats: { appearances: 1100, goals: 850, assists: 380, trophies: 45 },
+    bio: "An elite playmaker known for close control, vision, dribbling and remarkable finishing.",
+    achievements: ["8 Ballon d'Or awards", "2022 FIFA World Cup winner", "Multiple league and continental titles"],
+  },
+  {
+    id: "ronaldo",
+    name: "Cristiano Ronaldo",
+    shortName: "Ronaldo",
+    country: "Portugal",
+    flag: "🇵🇹",
+    club: "Al Nassr",
+    position: "Forward",
+    image: "/players/ronaldo.jpeg",
+    season: "2025–26 (demo)",
+    seasonStats: { appearances: 20, goals: 16, assists: 3 },
+    careerStats: { appearances: 1250, goals: 950, assists: 250, trophies: 35 },
+    bio: "A prolific forward renowned for movement, aerial ability, athleticism and goalscoring consistency.",
+    achievements: ["5 Ballon d'Or awards", "UEFA Euro 2016 winner", "UEFA Champions League multiple-time winner"],
+  },
+  {
+    id: "mbappe",
+    name: "Kylian Mbappé",
+    shortName: "Mbappé",
+    country: "France",
+    flag: "🇫🇷",
+    club: "Real Madrid",
+    position: "Forward",
+    image: "/players/mbbape.jpeg",
+    season: "2025–26 (demo)",
+    seasonStats: { appearances: 22, goals: 19, assists: 5 },
+    careerStats: { appearances: 450, goals: 350, assists: 130, trophies: 20 },
+    bio: "A dynamic attacker known for explosive pace, direct dribbling and clinical finishing.",
+    achievements: ["2018 FIFA World Cup winner", "2022 World Cup Golden Boot", "Multiple domestic league titles"],
+  },
+  {
+    id: "haaland",
+    name: "Erling Haaland",
+    shortName: "Haaland",
+    country: "Norway",
+    flag: "🇳🇴",
+    club: "Manchester City",
+    position: "Striker",
+    image: "/players/haaland.jpeg",
+    season: "2025–26 (demo)",
+    seasonStats: { appearances: 21, goals: 18, assists: 3 },
+    careerStats: { appearances: 350, goals: 280, assists: 55, trophies: 10 },
+    bio: "A powerful central striker known for positioning, speed in behind and high-volume finishing.",
+    achievements: ["UEFA Champions League winner", "Premier League and European Golden Shoe records", "Multiple domestic trophies"],
+  },
+];
+
+export const statLabels = [
+  ["appearances", "Appearances"],
+  ["goals", "Goals"],
+  ["assists", "Assists"],
+  ["trophies", "Major trophies"],
+];
